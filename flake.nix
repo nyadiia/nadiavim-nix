@@ -8,7 +8,6 @@
       nixpkgs,
       neovim-flake,
       flake-utils,
-      ...
     }:
     flake-utils.lib.eachDefaultSystem (
       system:
@@ -62,9 +61,9 @@
       in
       {
         devShells.default = pkgs.mkShell { nativeBuildInputs = [ nadiavim ]; };
-        packages.neovim = nadiavim;
-        apps.default = nadiavim;
-        overlay = final: prev: { inherit (self.packages) nadiavim; };
+        packages.default = nadiavim;
+        # i'm too stupid to figure out overlays >w<
+        # overlays.default = final: prev: { neovim = neovim-flake.lib.buildPkg prev [ nadiavim ]; };
       }
     );
 }
