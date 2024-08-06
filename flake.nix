@@ -14,44 +14,52 @@
       let
         pkgs = nixpkgs.legacyPackages.${system};
 
-        configModule.config = {
+        configModule.config.vim = {
           # Add any custom options (and feel free to upstream them!)
           # options = ...
 
-          vim = {
-            lsp = {
-              enable = true;
-              formatOnSave = true;
-              lightbulb.enable = true;
-              nvimCodeActionMenu.enable = true;
-              trouble.enable = true;
-            };
-            languages = {
-              enableFormat = true;
-              enableTreesitter = true;
-              enableExtraDiagnostics = true;
-              enableLSP = true;
-              rust.enable = true;
-              html.enable = true;
-              markdown.enable = true;
-              nix = {
-                enable = true;
-                format.type = "nixfmt-rfc-style";
-              };
-            };
-            theme.enable = true;
-            theme.name = "gruvbox";
-            autocomplete.enable = true;
-            autopairs.enable = true;
-            filetree.nvimTreeLua.enable = true;
-            filetree.nvimTreeLua.resizeOnFileOpen = true;
-            git.enable = true;
-            git.gitsigns.enable = true;
-            keys.enable = true;
-            keys.whichKey.enable = true;
-            statusline.lualine.enable = true;
-            treesitter.enable = true;
+          lsp = {
+            enable = true;
+            formatOnSave = true;
+            lightbulb.enable = true;
+            nvimCodeActionMenu.enable = true;
+            trouble.enable = true;
           };
+          languages = {
+            enableFormat = true;
+            enableTreesitter = true;
+            enableExtraDiagnostics = true;
+            enableLSP = true;
+            rust.enable = true;
+            html.enable = true;
+            markdown.enable = true;
+            nix = {
+              enable = true;
+              format.type = "nixfmt-rfc-style";
+            };
+          };
+          theme = {
+            enable = true;
+            name = "gruvbox";
+          };
+          autocomplete.enable = true;
+          autopairs.enable = true;
+          filetree.nvimTreeLua = {
+            enable = true;
+            resizeOnFileOpen = true;
+            closeOnLastWindow = true;
+            lspDiagnostics = true;
+          };
+          git = {
+            enable = true;
+            gitsigns.enable = true;
+          };
+          keys = {
+            enable = true;
+            whichKey.enable = true;
+          };
+          statusline.lualine.enable = true;
+          treesitter.enable = true;
         };
 
         nadiavim = neovim-flake.lib.neovimConfiguration {
