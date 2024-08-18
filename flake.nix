@@ -40,7 +40,7 @@
           };
           theme = {
             enable = true;
-            name = "gruvbox";
+            name = "oxocarbon";
           };
           autocomplete.enable = true;
           autopairs.enable = true;
