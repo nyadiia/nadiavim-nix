@@ -40,7 +40,7 @@
           };
           theme = {
             enable = true;
-            name = "oxocarbon";
+            name = "gruvbox-material";
           };
           autocomplete.enable = true;
           autopairs.enable = true;

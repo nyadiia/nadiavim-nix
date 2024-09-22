@@ -22,11 +22,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1710146030,
-        "narHash": "sha256-SZ5L6eA7HJ/nmkzGG7/ISclqe6oZdOZTNoesiInkXPQ=",
+        "lastModified": 1726560853,
+        "narHash": "sha256-X6rJYSESBVr3hBoH0WbKE5KvhPU5bloyZ2L4K60/fPQ=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "b1d9ab70662946ef0850d488da1c9019f3a9752a",
+        "rev": "c1dfcf08411b08f6b8615f7d8971a2bfa81d5e8a",
         "type": "github"
       },
       "original": {
@@ -98,6 +98,7 @@
         "plugin-gitsigns-nvim": "plugin-gitsigns-nvim",
         "plugin-glow-nvim": "plugin-glow-nvim",
         "plugin-gruvbox": "plugin-gruvbox",
+        "plugin-gruvbox-material": "plugin-gruvbox-material",
         "plugin-indent-blankline": "plugin-indent-blankline",
         "plugin-kommentary": "plugin-kommentary",
         "plugin-lsp-signature": "plugin-lsp-signature",
@@ -144,11 +145,11 @@
         "tidalcycles": "tidalcycles"
       },
       "locked": {
-        "lastModified": 1723950859,
-        "narHash": "sha256-GdLYNIXN/WDyztV/qX/4FvtrwCHn9VBkXaskoSLM7Hk=",
+        "lastModified": 1727026553,
+        "narHash": "sha256-OvUXwWH2eYmoGu5RiV8l8E3qxPxNEPTFsn7wIlyhuY8=",
         "owner": "nyadiia",
         "repo": "neovim-flake",
-        "rev": "2916ca42a98fdb71d39c13e978db8d0be11adcd0",
+        "rev": "a742de46d9cfebbbe6834d154a0541ed4519d231",
         "type": "github"
       },
       "original": {
@@ -218,8 +219,8 @@
     "nixpkgs_3": {
       "locked": {
         "lastModified": 0,
-        "narHash": "sha256-M0xJ3FbDUc4fRZ84dPGx5VvgFsOzds77KiBMW/mMTnI=",
-        "path": "/nix/store/0jr2kk95c34c0b6yxi75q4fqgb43kqkm-source",
+        "narHash": "sha256-+yj+xgsfZaErbfYM3T+QvEE2hU7UuE+Jf0fJCJ8uPS0=",
+        "path": "/nix/store/6inj491lsap4ia7mmvn2gbh53jb27zq0-source",
         "type": "path"
       },
       "original": {
@@ -512,6 +513,22 @@
       "original": {
         "owner": "ellisonleao",
         "repo": "gruvbox.nvim",
+        "type": "github"
+      }
+    },
+    "plugin-gruvbox-material": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1725257694,
+        "narHash": "sha256-ZaFYnEyLsjtF96Hu0Ohvm0MLi6qjU228j32YXmpYsUQ=",
+        "owner": "sainnhe",
+        "repo": "gruvbox-material",
+        "rev": "559b4a9abb6781699404dfd98fb7d6ec83113337",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sainnhe",
+        "repo": "gruvbox-material",
         "type": "github"
       }
     },
@@ -919,11 +936,11 @@
     "plugin-oxocarbon": {
       "flake": false,
       "locked": {
-        "lastModified": 1701119822,
-        "narHash": "sha256-++JALLPklok9VY2ChOddTYDvDNVadmCeB98jCAJYCZ0=",
+        "lastModified": 1724853107,
+        "narHash": "sha256-Hi/nATEvZ4a6Yxc66KtuJqss6kQV19cmtIlhCw6alOI=",
         "owner": "nyoom-engineering",
         "repo": "oxocarbon.nvim",
-        "rev": "c5846d10cbe4131cc5e32c6d00beaf59cb60f6a2",
+        "rev": "004777819ba294423b638a35a75c9f0c7be758ed",
         "type": "github"
       },
       "original": {
